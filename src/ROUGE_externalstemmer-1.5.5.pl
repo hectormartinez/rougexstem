@@ -3203,7 +3203,7 @@ local ($c, $v, $C, $V, $mgr0, $meq1, $mgr1, $_v);
 sub stem
 {    my ($stem, $suffix, $firstch);
      my $w = shift;
-     $w = `python src/extstem.py '$w'`;
+     $w = `python extstem.py '$w'`;
      return $w;
 }
 
