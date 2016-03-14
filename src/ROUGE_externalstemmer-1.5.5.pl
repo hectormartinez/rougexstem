@@ -3197,13 +3197,13 @@ sub readEvals {
 
 local %step2list;
 local %step3list;
-local ($c, $v, $C, $V, $mgr0, $meq1, $mgr1, $_v);
+#local ($c, $v, $C, $V, $mgr0, $meq1, $mgr1, $_v);
 
 
 sub stem
 {    my ($stem, $suffix, $firstch);
      my $w = shift;
-     $w = `python extstem.py '$w'`;
+     $w = `python ../extstem.py '$w'`; #This is just an ad hoc path for the system to work using Natalie's setup in runROUGE-test.pl
      return $w;
 }
 
