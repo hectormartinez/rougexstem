@@ -20,8 +20,8 @@ if [ ! -d "$OUTPUTDIR" ]; then
 mkdir -p $OUTPUTDIR
 fi
 
-#python -u summarizer/inference_taln2016.py -b $LENGTH -i $DOCSDIR -o $OUTPUTDIR -t $DTYPE --manpath $REFDIR --decoder glpsolve --timelimit $TIMELIMIT --unigrams --lang en
-#python -u eval_taln.py r1_$DTYPE $OUTPUTDIR'summary/' $LENGTH $SCORES $REFDIR $DTYPE
+python -u summarizer/inference_taln2016.py -b $LENGTH -i $DOCSDIR -o $OUTPUTDIR -t $DTYPE --manpath $REFDIR --decoder glpsolve --timelimit $TIMELIMIT --unigrams --lang en
+python -u eval_taln.py r1_$DTYPE $OUTPUTDIR'summary/' $LENGTH $SCORES $REFDIR $DTYPE
 
 
 #OUTPUTDIR=taln2016/duc04_bigrams/test/
