@@ -146,4 +146,4 @@ def porter_stem_sent(s):
     return ' '.join([porter_stem(w) for w in s.split()])
 
 def tokenize(text):
-    return ' '.join(nltk.tokenize.punkt_word_tokenize(text))
+    return ' '.join(nltk.tokenize.wordpunct_tokenize(text))
