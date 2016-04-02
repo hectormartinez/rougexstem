@@ -1,0 +1,106 @@
+8
+
+dir
+18
+https://splitta.googlecode.com/svn/trunk
+https://splitta.googlecode.com/svn
+
+
+
+2009-10-15T17:00:33.657758Z
+18
+dgillick
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+72f27a26-f7a0-11dd-88c7-29a3b14d5316
+
+model_nb
+dir
+
+sample.txt
+file
+
+
+
+
+2009-06-19T21:50:41.000000Z
+6d8d5146851536c9f7f2c81ac9c2f28f
+2009-03-30T21:01:49.771215Z
+2
+dgillick
+
+sbd.py
+file
+19
+
+
+
+2009-10-15T17:08:40.000000Z
+218db3df0f359cd5c6e45bf484f596fa
+2009-10-15T17:10:01.322772Z
+19
+dgillick
+
+SETUP
+file
+
+
+
+
+2009-06-19T21:50:41.000000Z
+a1a3ea54f36d7c77b6473cde68c1329a
+2009-06-11T19:29:38.480918Z
+12
+dgillick
+
+model_svm
+dir
+
+word_tokenize.py
+file
+
+
+
+
+2009-06-19T21:50:41.000000Z
+db03db2793cde61370736c7241e12706
+2009-05-21T01:06:00.851126Z
+4
+dgillick
+
+sbd_util.py
+file
+
+
+
+
+2009-06-19T21:50:41.000000Z
+26e59fabccf0d6965f6b3c5d2cb5ab2c
+2009-10-15T17:00:33.657758Z
+18
+dgillick
+
+README
+file
+
+
+
+
+2009-06-19T21:50:41.000000Z
+105fb337eb3612f0408e396a78164a74
+2009-06-11T19:29:38.480918Z
+12
+dgillick
+
