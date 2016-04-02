@@ -7,8 +7,11 @@ export HOSTNAME=localhost
 TIMELIMIT=300
 
 ##########################################################DUC04
-DOCSDIR=/coastal/summ_data/DUC2004/duc04/docs/
-REFDIR=/coastal/summ_data/DUC2004/duc04/sums/
+#DOCSDIR=/coastal/summ_data/DUC2004/duc04/docs/
+#REFDIR=/coastal/summ_data/DUC2004/duc04/sums/
+
+DOCSDIR=/home/alonso/proj/rougexstem/Corpus_RPM2_resumes/Corpus_RPM2_documents/singledoc/
+REFDIR=/home/alonso/proj/rougexstem/Corpus_RPM2_resumes/Corpus_RPM2_references/singledoc/
 DTYPE=duc04
 LENGTH=665
 echo "INPUTDIR "$INPUTDIR
