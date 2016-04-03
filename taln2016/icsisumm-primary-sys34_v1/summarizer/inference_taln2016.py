@@ -13,7 +13,7 @@ class Sentence:
 		if lang=='en':
 			self.tok2 = util.porter_stem_sent(util.tokenize(fix_text(self.orig)))
 		elif lang=='fr':
-			self.tok2 = [stmr.stem(w) for w in nltk.tokenize.word_tokenize(self.orig.decode('utf8'))]
+			self.tok2 = " ".join([stmr.stem(w) for w in nltk.tokenize.word_tokenize(self.orig.decode('utf8'))])
 		else:
 			print 'Unsupported language...'
 			sys.exit(0)
