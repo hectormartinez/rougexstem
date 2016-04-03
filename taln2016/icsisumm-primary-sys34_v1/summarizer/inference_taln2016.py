@@ -1,5 +1,6 @@
 import sys, os, util, re, collections, shutil, math
 import prob_util, decoder2, decoder_localsolver
+import nltk
 from nltk.stem.snowball import SnowballStemmer
 stmr = SnowballStemmer("french")
 
