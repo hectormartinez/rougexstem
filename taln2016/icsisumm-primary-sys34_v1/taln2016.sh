@@ -4,7 +4,7 @@ SCORES=taln2016/scores
 ROUGEINST=/home/natschluter/eval_software/ROUGE-1.5.5/ROUGE-1.5.5.pl
 export PATH=solver/glpk-4.43/examples/:$PATH
 export HOSTNAME=localhost
-TIMELIMIT=1000
+TIMELIMIT=100
 
 ##########################################################DUC04
 #DOCSDIR=/coastal/summ_data/DUC2004/duc04/docs/
