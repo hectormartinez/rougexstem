@@ -1,8 +1,10 @@
 import sys, os, util, re, collections, shutil, math
 import prob_util, decoder2, decoder_localsolver
+from nltk.stem.snowball import SnowballStemmer
+stmr = SnowballStemmer("french")
 
 class Sentence:
-	def __init__(self, bytes, id, order, orig, doc, tok=None, par=None, unresolved=False, lang='en'):
+	def __init__(self, bytes, id, order, orig, doc, tok=None, par=None, unresolved=False, lang='fr'):
 		self.id = id
 		self.order = order
 		self.orig = orig
@@ -10,9 +12,7 @@ class Sentence:
 		if lang=='en':
 			self.tok2 = util.porter_stem_sent(util.tokenize(fix_text(self.orig)))
 		elif lang=='fr':
-			#FOR HECTOR (you will do something in the util.py file for this)
-			print 'This part is for you, Hector...'
-			sys.exit(0)
+			self.tok2 = [stmr.stem(w) for w in nltk.tokenize.word_tokenize(self.orig.decode('utf8'))]
 		else:
 			print 'Unsupported language...'
 			sys.exit(0)
