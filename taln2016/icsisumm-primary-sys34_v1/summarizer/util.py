@@ -82,9 +82,8 @@ def is_punct(text):
 		if letter in set('abcdefghijklmnopqrstuvwxyz1234567890'): return False
 	return True
 
-#stopwords = 'au aux avec ce ces dans de des du elle en et eux il je la le leur lui ma mais me même mes moi mon ne nos notre nous on ou par pas pour qu que qui sa se ses son sur ta te tes toi ton tu un une vos votre vous c d j l à m n s t y été étée étées étés étant étante étants étantes suis es est sommes êtes sont serai seras sera serons serez seront serais serait serions seriez seraient étais était étions étiez étaient fus fut fûmes fûtes furent sois soit soyons soyez soient fusse fusses fût fussions fussiez fussent ayant ayante ayantes ayants eu eue eues eus ai as avons avez ont aurai auras aura aurons aurez auront aurais aurait aurions auriez auraient avais avait avions aviez avaient eut eûmes eûtes eurent aie aies ait ayons ayez aient eusse eusses eût eussions eussiez eussent'.split(" ")
-#stopwords = codecs.open("/home/alonso/proj/taln2016/summarizer_fr/frenchstopwords","r","utf-8").read().strip().split(" ")
-stopwords = 'au aux avec ce ces dans de des du elle en et eux il je la le leur lui ma mais me mes moi mon nos notre'.split(" ")
+stopwords = 'au aux avec ce ces dans de des du elle en et eux il je la le leur lui ma mais me même mes moi mon ne nos notre nous on ou par pas pour qu que qui sa se ses son sur ta te tes toi ton tu un une vos votre vous c d j l à m n s t y été étée étées étés étant étante étants étantes suis es est sommes êtes sont serai seras sera serons serez seront serais serait serions seriez seraient étais était étions étiez étaient fus fut fûmes fûtes furent sois soit soyons soyez soient fusse fusses fût fussions fussiez fussent ayant ayante ayantes ayants eu eue eues eus ai as avons avez ont aurai auras aura aurons aurez auront aurais aurait aurions auriez auraient avais avait avions aviez avaient eut eûmes eûtes eurent aie aies ait ayons ayez aient eusse eusses eût eussions eussiez eussent'.split(" ")
+#stopwords = 'au aux avec ce ces dans de des du elle en et eux il je la le leur lui ma mais me mes moi mon nos notre'.split(" ")
 def remove_stopwords(words):
 	if type(words) == type(''):
 		return ' '.join([w for w in words.split() if not w in stopwords])
