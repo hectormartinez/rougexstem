@@ -3,6 +3,7 @@ import prob_util, decoder2, decoder_localsolver
 import nltk
 from nltk.stem.snowball import SnowballStemmer
 stmr = SnowballStemmer("french")
+import codecs
 
 class Sentence:
 	def __init__(self, bytes, id, order, orig, doc, tok=None, par=None, unresolved=False, lang='fr'):
@@ -74,7 +75,7 @@ def create_ilp_output(sents, concepts, path):
 	sentence_concepts_file = path + '.sent.tok.concepts'
 	length_file = path + '.sent.tok.lengths'
 	orig_file = path + '.sent.tok.orig'
-	sent_fh = open(sentence_concepts_file, 'w')
+	sent_fh = codecs.open(sentence_concepts_file, 'w',encoding="utf-8")
 	length_fh = open(length_file, 'w')
 	orig_fh = open(orig_file, 'w')
 	for sent in sents:
