@@ -10,8 +10,8 @@ TIMELIMIT=300
 #DOCSDIR=/coastal/summ_data/DUC2004/duc04/docs/
 #REFDIR=/coastal/summ_data/DUC2004/duc04/sums/
 
-DOCSDIR=/home/alonso/proj/rougexstem/Corpus_RPM2_resumes/Corpus_RPM2_documents/singledoc/
-REFDIR=/home/alonso/proj/rougexstem/Corpus_RPM2_resumes/Corpus_RPM2_references/singledoc/
+DOCSDIR=/home/alonso/proj/rougexstem/Corpus_RPM2_resumes/Corpus_RPM2_documents/smallset/
+REFDIR=/home/alonso/proj/rougexstem/Corpus_RPM2_resumes/Corpus_RPM2_references/smallset/
 DTYPE=duc04
 LENGTH=665
 echo "INPUTDIR "$INPUTDIR
