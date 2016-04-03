@@ -84,12 +84,12 @@ def run_rouge_bytes(config_file, length, outputdir):
 	print "evaluating...", config_file, outputdir+"score.txt"
 	rg='perl /home/natschluter/eval_software/ROUGE-1.5.5/ROUGE-1.5.5.pl'
 
-	os.system(rg+"  -e /home/natschluter/eval_software/ROUGE-1.5.5/data -n 4 -2 4 -u -m -x -c 95 -r 1000 -f A -t 0 -b 665 -a "+config_file+" > "+outputdir+"_score.txt" )
+	os.system(rg+"  -e /home/alonso/tool/ROUGE-1.5.5/data -n 4 -2 4 -u -m -x -c 95 -r 1000 -f A -t 0 -b 665 -a "+config_file+" > "+outputdir+"_score.txt" )
 	
 def run_rouge(config_file, length, outputdir):
 	print "evaluating...", config_file, outputdir+"score.txt"
 
-	os.system(rg+"  -e /home/natschluter/eval_software/ROUGE-1.5.5/data -n 4 -2 4 -u -m -x -c 95 -r 1000 -f A -t 0 -l "+length+" -a "+config_file+" > "+outputdir+"_score.txt" )
+	os.system(rg+"  -e /home/alonso/tool/ROUGE-1.5.5/data -n 4 -2 4 -u -m -x -c 95 -r 1000 -f A -t 0 -l "+length+" -a "+config_file+" > "+outputdir+"_score.txt" )
 	
 def evaluate_length():
 	print len(sys.argv)
