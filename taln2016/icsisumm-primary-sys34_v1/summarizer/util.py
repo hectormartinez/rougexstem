@@ -320,5 +320,5 @@ def labeled_contract_stopwords(triples_string):
 
 def tokenize(text):
 	#return ' '.join(nltk.tokenize.punkt.PunktWordTokenizer(text))
-	return ' '.join(nltk.tokenize.word_tokenize(text))
+	return ' '.join(nltk.tokenize.wordpunct_tokenize(text))
 	#return ' '.join(nltk.tokenize.punkt.punkt_word_tokenize(text))
