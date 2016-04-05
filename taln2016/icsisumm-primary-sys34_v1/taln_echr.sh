@@ -7,10 +7,12 @@ export HOSTNAME=localhost
 TIMELIMIT=300
 
 #echr
-DOCSDIR=/coastal/summ_data/echr_data_clean/test/text_docs/
-REFDIR=/coastal/summ_data/echr_data_clean/test/text_sums/
+#DOCSDIR=/coastal/summ_data/echr_data_clean/test/text_docs/
+DOCSDIR=/coastal/summ_data/echr_fr/test/text_docs/
+#REFDIR=/coastal/summ_data/echr_data_clean/test/text_sums/
+REFDIR=/coastal/summ_data/echr_fr/test/text_sums/
 DTYPE=echr
-LENGTH=805
+LENGTH=840
 
 echo "INPUTDIR "$INPUTDIR
 echo "DTYPE "$DTYPE
