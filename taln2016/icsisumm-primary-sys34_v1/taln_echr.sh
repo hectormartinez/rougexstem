@@ -23,7 +23,7 @@ if [ ! -d "$OUTPUTDIR" ]; then
 mkdir -p $OUTPUTDIR
 fi
 
-python -u summarizer_fr/inference_taln2016.py -l $LENGTH -i $DOCSDIR -o $OUTPUTDIR -t $DTYPE --manpath $REFDIR --decoder glpsolve --timelimit $TIMELIMIT --unigrams --lang en
+python -u summarizer/inference_taln2016.py -l $LENGTH -i $DOCSDIR -o $OUTPUTDIR -t $DTYPE --manpath $REFDIR --decoder glpsolve --timelimit $TIMELIMIT --unigrams --lang en
 python -u eval_taln.py r1_$DTYPE $OUTPUTDIR'summary/' $LENGTH $SCORES $REFDIR $DTYPE
 
 OUTPUTDIR=taln2016/echr_bigrams/test/
@@ -31,7 +31,7 @@ if [ ! -d "$OUTPUTDIR" ]; then
 mkdir -p $OUTPUTDIR
 fi
 
-python -u summarizer_fr/inference_taln2016.py -l $LENGTH -i $DOCSDIR -o $OUTPUTDIR -t $DTYPE --manpath $REFDIR --decoder glpsolve --timelimit $TIMELIMIT --bigrams --lang en
+python -u summarizer/inference_taln2016.py -l $LENGTH -i $DOCSDIR -o $OUTPUTDIR -t $DTYPE --manpath $REFDIR --decoder glpsolve --timelimit $TIMELIMIT --bigrams --lang en
 python -u eval_taln.py r2_$DTYPE $OUTPUTDIR'summary/' $LENGTH $SCORES $REFDIR $DTYPE
 
 OUTPUTDIR=taln2016/echr_fourgrams/test/
@@ -39,7 +39,7 @@ if [ ! -d "$OUTPUTDIR" ]; then
 mkdir -p $OUTPUTDIR
 fi
 
-python -u summarizer_fr/inference_taln2016.py -l $LENGTH -i $DOCSDIR -o $OUTPUTDIR -t $DTYPE --manpath $REFDIR --decoder glpsolve --timelimit $TIMELIMIT --fourgrams --lang en
+python -u summarizer/inference_taln2016.py -l $LENGTH -i $DOCSDIR -o $OUTPUTDIR -t $DTYPE --manpath $REFDIR --decoder glpsolve --timelimit $TIMELIMIT --fourgrams --lang en
 python -u eval_taln.py r4_$DTYPE $OUTPUTDIR'summary/' $LENGTH $SCORES $REFDIR $DTYPE
 
 OUTPUTDIR=taln2016/echr_su4/test/
